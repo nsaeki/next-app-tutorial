@@ -7,12 +7,13 @@ import styles from './layout.module.css'
 const name = 'Your Name'
 export const siteTitle = 'Next.js Sample Website'
 
-interface LayoutArgs {
-  children?: JSX.Element | JSX.Element[]
+export default function Layout({
+  children,
+  home
+}: {
+  children: React.ReactNode
   home?: boolean
-}
-
-export default function Layout({ children, home }: LayoutArgs) {
+}) {
   return (
     <div className={styles.container}>
       <Head>
