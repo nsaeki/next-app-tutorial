@@ -50,7 +50,6 @@ export default function Layout({ children, home }) {
                   width={108}
                   alt={name}
                 />
-                <h1 className={utilStyles.heading2Xl}>{name}</h1>
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
